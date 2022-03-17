@@ -1,0 +1,11 @@
+{
+  "name": "weboconnect",
+  "version": "1.0.0",
+  "description": "Weboconnect excercise test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vivek Bora",
+  "license": "ISC"
+}
