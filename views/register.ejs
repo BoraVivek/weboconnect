@@ -1,0 +1,16 @@
+<main class="bg-cyan-800 p-5 m-5 rounded shadow-lg">
+    <section class="flex flex-col gap-5 items-center">
+        <div class="section-header text-white flex flex-col items-center gap-2">
+            <span class="text-3xl font-bold">Register</span>
+            <span class="text-lg text-cyan-400">Be a part of something amazing</span>
+        </div>
+        <form action="/users/confirm-registration" class="w-full section-content flex flex-col gap-5 inputGroup">
+            <input type="text" name="name" id="name" placeholder="Enter your name..." class="input-field">
+            <input type="email" name="email" id="email" placeholder="Enter your email..." class="input-field">
+            <input type="password" name="password" id="password" placeholder="Enter your password..."
+                class="input-field">
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Enter confirm password..." class="input-field">
+            <input type="submit" value="Register" class="bg-cyan-600 text-white px-5 py-2 w-32 self-center rounded">
+        </form>
+    </section>
+</main>

@@ -1,0 +1,18 @@
+<header class="bg-cyan-800 text-white flex flex-col p-5 items-center border-b-4 border-cyan-600">
+    <div class="logo text-3xl font-bold">
+        <a href="/">Weboconnect</a>
+    </div>
+    <nav>
+        <ul class="flex gap-10 mt-4">
+            <li class="<%= active == 'homepage' ? 'activeMenu': '' %> menu-item">
+                <a href="/">Home</a>
+            </li>
+            <li class="menu-item <%= active == 'login' ? 'activeMenu': '' %>">
+                <a href="/login">Login</a>
+            </li>
+            <li class="menu-item <%= active == 'register' ? 'activeMenu': '' %>">
+                <a href="/register">Register</a>
+            </li>
+        </ul>
+    </nav>
+</header>

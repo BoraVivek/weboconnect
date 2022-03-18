@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    @apply bg-cyan-100
+}
+
+.activeMenu{
+    @apply bg-cyan-300 px-3 py-1 text-slate-700 rounded shadow-lg
+}
+
+.inputGroup .input-field{
+    @apply bg-cyan-600 text-white placeholder:text-white px-5 py-2 rounded
+}

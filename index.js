@@ -2,10 +2,13 @@ const express = require("express");
 const app = express();
 const port = 8000;
 const expressLayouts = require("express-ejs-layouts");
+const path = require("path");
+require('dotenv').config()
 
 // Setting up View Engine and Views folder
 app.set("view engine", "ejs");
 app.set("views", "./views");
+app.use(express.static(path.join(__dirname,"./public")));
 
 // Setting up Layouts Configuration
 app.use(expressLayouts);
