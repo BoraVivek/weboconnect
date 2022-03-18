@@ -1,4 +1,4 @@
-<main class="grow md:w-8/12 md:mx-auto md:mt-10">
+<main class="grow md:w-6/12 md:mx-auto md:mt-10">
     <section class="bg-cyan-800 p-5 m-5 rounded shadow-lg flex flex-col gap-5 items-center">
         <div class="section-header text-white flex flex-col items-center gap-2 w-full">
             <span class="text-3xl font-bold">Profile</span>
@@ -10,7 +10,7 @@
                 Your account is currently in <%= user.status %> state.
             </div>
             <div class="profile-details flex flex-col gap-5 items-start">
-                <div class="info-group flex">
+                <div class="info-group">
                     <div class="info-heading">
                         Name
                     </div>
@@ -18,7 +18,7 @@
                         <%= user.name %>
                     </div>
                 </div>
-                <div class="info-group flex">
+                <div class="info-group">
                     <div class="info-heading">
                         Email
                     </div>
@@ -26,7 +26,7 @@
                         <%= user.email %>
                     </div>
                 </div>
-                <div class="info-group flex">
+                <div class="info-group">
                     <div class="info-heading">
                         Gender
                     </div>
@@ -34,7 +34,7 @@
                         <%= user.gender.toUpperCase() %>
                     </div>
                 </div>
-                <div class="info-group flex">
+                <div class="info-group">
                     <div class="info-heading">
                         Phone
                     </div>

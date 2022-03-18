@@ -43,6 +43,6 @@ body{
 }
 
 .info-value{
-    @apply bg-cyan-600 w-64 px-4 py-2 rounded text-white
+    @apply bg-cyan-600 w-64 md:w-80 px-4 py-2 rounded text-white
 }
 
