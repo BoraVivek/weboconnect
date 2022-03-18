@@ -1,5 +1,9 @@
 # Weboconnect Excercise Test by Vivek Bora
 
+### Live Demo:
+
+[Weboconnect Excercise Demo Link](https://weboconnect-vivek.herokuapp.com/)
+
 ### Installation: Install Node Packages
 
 `npm install`
@@ -46,7 +50,3 @@ TailwindCSS has been used as the CSS Framework for styling the application.
 - passport & passport-local : To Implement Local Authentication System
 - tailwindcss : Used for Styling the application
 
-
-### Live Demo:
-
-[Weboconnect Excercise Demo Link](https://weboconnect-vivek.herokuapp.com/)
