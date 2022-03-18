@@ -4,6 +4,7 @@
   "description": "Weboconnect excercise test",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind:css": "postcss public/css/tailwind.css -o public/css/style.css --watch"
   },
