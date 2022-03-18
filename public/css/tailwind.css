@@ -21,3 +21,20 @@ body{
 .menu-item:not(.activeMenu){
     @apply hover:border-b hover:text-cyan-400
 }
+
+.account-status.pending{
+    @apply bg-orange-400 px-2 py-2 rounded
+}
+
+.info-group{
+    @apply gap-10 items-center
+}
+
+.info-heading{
+    @apply w-10 text-white
+}
+
+.info-value{
+    @apply bg-cyan-600 w-64 px-4 py-2 rounded text-white
+}
+
