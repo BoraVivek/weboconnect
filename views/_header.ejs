@@ -7,12 +7,23 @@
             <li class="<%= active == 'homepage' ? 'activeMenu': '' %> menu-item">
                 <a href="/">Home</a>
             </li>
-            <li class="menu-item <%= active == 'login' ? 'activeMenu': '' %>">
-                <a href="/login">Login</a>
-            </li>
-            <li class="menu-item <%= active == 'register' ? 'activeMenu': '' %>">
-                <a href="/register">Register</a>
-            </li>
+            <% if(locals.user == undefined){ %> 
+                <li class="menu-item <%= active == 'login' ? 'activeMenu': '' %>">
+                    <a href="/login">Login</a>
+                </li>
+                <li class="menu-item <%= active == 'register' ? 'activeMenu': '' %>">
+                    <a href="/register">Register</a>
+                </li>
+            <% }else{ %> 
+                <li class="menu-item <%= active == 'profile' ? 'activeMenu': '' %>">
+                    <a href="/users/profile">Profile</a>
+                </li>
+                <li class="menu-item">
+                    <form action="/logout" method="post">
+                        <button>Logout</button>
+                    </form>
+                </li>
+            <% } %> 
         </ul>
     </nav>
 </header>

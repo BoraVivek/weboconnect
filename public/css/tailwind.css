@@ -17,3 +17,7 @@ body{
 .inputGroup .input-field{
     @apply bg-cyan-600 text-white placeholder:text-white px-5 py-2 rounded
 }
+
+.menu-item:not(.activeMenu){
+    @apply hover:border-b hover:text-cyan-400
+}

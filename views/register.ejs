@@ -1,16 +1,27 @@
-<main class="bg-cyan-800 p-5 m-5 rounded shadow-lg">
-    <section class="flex flex-col gap-5 items-center">
+<main class="grow md:w-6/12 md:mx-auto md:mt-10">
+    <section class="bg-cyan-800 p-5 m-5 rounded shadow-lg flex flex-col gap-5 items-center">
         <div class="section-header text-white flex flex-col items-center gap-2">
             <span class="text-3xl font-bold">Register</span>
             <span class="text-lg text-cyan-400">Be a part of something amazing</span>
         </div>
-        <form action="/users/confirm-registration" class="w-full section-content flex flex-col gap-5 inputGroup">
-            <input type="text" name="name" id="name" placeholder="Enter your name..." class="input-field">
-            <input type="email" name="email" id="email" placeholder="Enter your email..." class="input-field">
+        <% if(flash.error.length > 0){ %>
+            <div class="errors text-white bg-red-600 px-4 py-2">
+                <%= flash.error %>
+            </div>
+        <% } %>
+        <form action="/users/confirm-registration" class="w-full section-content flex flex-col gap-5 inputGroup" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your name..." class="input-field" required>
+            <input type="email" name="email" id="email" placeholder="Enter your email..." class="input-field" required>
             <input type="password" name="password" id="password" placeholder="Enter your password..."
-                class="input-field">
-            <input type="password" name="confirm_password" id="confirm_password" placeholder="Enter confirm password..." class="input-field">
-            <input type="submit" value="Register" class="bg-cyan-600 text-white px-5 py-2 w-32 self-center rounded">
+                class="input-field" required>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Enter confirm password..." class="input-field" required>
+            <select name="gender" id="gender" class="input-field" required>
+                <option>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="male">Female</option>
+            </select>
+            <input type="text" name="phone" placeholder="Enter phone number..." class="input-field" required>
+            <input type="submit" value="Register" class="bg-cyan-600 text-white px-5 py-2 w-32 self-center rounded cursor-pointer hover:bg-slate-800" required>
         </form>
     </section>
 </main>

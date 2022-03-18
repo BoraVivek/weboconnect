@@ -1,27 +1,31 @@
-<main class="mt-10">
-    <div class="flex flex-col gap-10 items-center">
-        <img src="/img/development.svg" alt="Development" class="h-40">
-        <div class="flex flex-col items-center gap-2">
-            <span class="text-3xl font-bold text-cyan-800">
-                Welcome to Weboconnect,
-            </span>
-            <span class="text-lg text-gray-600">
-                Let's build a better technology together.
-            </span>
+<main class="mt-10 grow">
+    <div class="flex flex-col  gap-10 md:gap-20 items-center">
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+            <img src="/img/development.svg" alt="Development" class="h-40 md:h-60">
+            <div class="flex flex-col items-center gap-2">
+                <span class="text-3xl md:text-5xl font-bold text-cyan-800">
+                    Welcome to Weboconnect,
+                </span>
+                <span class="text-lg md:text-2xl text-slate-600">
+                    Let's build a better technology together.
+                </span>
+            </div>
         </div>
-        <div class="action-btns flex flex-col items-center gap-5">
+        <% if(locals.user == undefined){ %>
+        <div class="action-btns flex flex-col md:flex-row items-center gap-5">
             <a href="/login">
-                <button class="bg-slate-600 py-3 text-white rounded shadow-lg w-60">
+                <button class="bg-slate-600 py-3 text-white rounded shadow-lg w-60 md:w-80">
                     <i class="fas fa-sign-in"></i>
                     Login
                 </button>
             </a>
             <a href="/register">
-                <button class="bg-cyan-900 py-3 text-white rounded shadow-lg w-60">
+                <button class="bg-cyan-900 py-3 text-white rounded shadow-lg w-60 md:w-80">
                     <i class="fas fa-user-plus"></i>
                     Register
                 </button>
             </a>
         </div>
+        <% } %>
     </div>
 </main>
