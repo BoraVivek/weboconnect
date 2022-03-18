@@ -22,7 +22,9 @@ module.exports.updateProfile = async function(req,res){
             return res.redirect("back");
         }
 
-        await User.findOneAndUpdate({email: req.body.email}, req.body);
+        await User.findOneAndUpdate({email: req.user.email}, req.body);
+
+        console.log(req.body);
 
         req.flash("success",'Details updated successfully');
         return res.redirect("/users/profile");
