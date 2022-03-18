@@ -4,6 +4,11 @@
 
 `npm install`
 
+### Environment Variables to configure
+- `PORT` : Port on which the server will be running
+- `DB_NAME` : MongoDB connection String URL
+- `SECRET_KEY` : Secret Key for Session
+
 ### Run Project:
 
 `npm start` 
